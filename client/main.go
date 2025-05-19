@@ -23,12 +23,13 @@ func main() {
 	id := uuid.New()
 	// Example usage
 	checkoutRequest := CheckoutRequest{
-		OrderID:           id.String(),
-		MerchantID:        FONDY_MERCHANT_ID,
-		OrderDesc:         "Test Order",
-		Amount:            "1000",
-		Currency:          "KZT",
-		ServerCallbackURL: "http://188.227.35.6:8081",
+		OrderID:    id.String(),
+		MerchantID: FONDY_MERCHANT_ID,
+		OrderDesc:  "Test Order",
+		Amount:     "1000",
+		Currency:   "USD",
+		// ResponseURL:       "http://188.227.35.6:8081/callback",
+		ServerCallbackURL: "http://188.227.35.6:8081/callback",
 	}
 
 	checkoutRequest.SetSignature(FONDY_MERCHANT_PASSWORD)
