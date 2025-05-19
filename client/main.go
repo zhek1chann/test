@@ -28,7 +28,7 @@ func main() {
 		OrderDesc:         "Test Order",
 		Amount:            "1000",
 		Currency:          "USD",
-		ServerCallbackURL: "http://192.168.10.2:8080",
+		ServerCallbackURL: "http://188.227.35.6:8081",
 	}
 
 	checkoutRequest.SetSignature(FONDY_MERCHANT_PASSWORD)
