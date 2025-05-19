@@ -44,8 +44,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/callback", callbackHandler)
 
-	fmt.Println("Listening on http://0.0.0.0:8080/callback ...")
-	err := http.ListenAndServe("0.0.0.0:8080", nil)
+	fmt.Println("Listening on http://0.0.0.0:8081/callback ...")
+	err := http.ListenAndServe("0.0.0.0:8081", nil)
 	if err != nil {
 		log.Fatalf("Server failed: %s", err)
 	}
