@@ -27,7 +27,7 @@ func main() {
 		MerchantID:        FONDY_MERCHANT_ID,
 		OrderDesc:         "Test Order",
 		Amount:            "1000",
-		Currency:          "USD",
+		Currency:          "KZT",
 		ServerCallbackURL: "http://188.227.35.6:8081",
 	}
 
